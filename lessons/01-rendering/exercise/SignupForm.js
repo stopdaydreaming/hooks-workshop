@@ -24,5 +24,16 @@ import { DateFields, MonthField, DayField, YearField } from "app/DateFields"
 // export default SignupForm
 
 export default function SignupForm() {
-  return null
+  return (
+    <form className="SignupForm">
+      <input type="text" placeholder="Display Name" />
+      <input type="text" placeholder="Avatar" />
+      <input type="text" placeholder="UserName" />
+      <input type="text" placeholder="Password" />
+      <TabsButton>Sign Up!</TabsButton>
+      <DateFields value={new Date()}>
+        <MonthField /> | <DayField /> | <YearField start={2018} end={2019} />
+      </DateFields>
+    </form>
+  )
 }

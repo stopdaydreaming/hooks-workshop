@@ -1,0 +1,5 @@
+@import '@cnnprivate/video-toolkit/src/styles/variables';
+
+.video-title {
+  color: var(--color--heading--light);
+}

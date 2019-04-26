@@ -1,0 +1,82 @@
+# React Workshop Day 1
+
+## JSX
+- where to view compiled JSX code
+- { } = create element
+- use console to view JSX compiled
+- “children” prop is just like every other prop, can be passed by name or position
+    * Strings, number and other elements can be children
+- { } = go back to javascript
+- {{ }} = create an object
+- Using FontAwesome in ReactJS
+    - import { FaHome } from “react-icons/fa"
+    - Use <FaHome />
+    - import { FaHome, FaPlus } from “react-icons/fa"
+- Start React elements with uppercase, so React will not use <custom-element>
+- EX: “const CTAButon = (props) => ("
+- example
+    - const [minutes, setMinutes] = useState(5) //destructured array
+    - const add = ( ) => { setMinutes(minutes + 1 ) }
+
+## JavaScript
+//setTimeout function
+setTimeout(() => {
+  console.log(minutes)
+}, 10000)
+
+//if you get a ? on a form submission
+event.preventDefault()
+
+//variable parses an integer if text is entered
+const int = parseInt(event.target.value);
+
+//two hardest things in programming
+// naming things
+// cache invalidation
+
+//dynamically change document title
+document.title = ...
+
+//abstraction
+const user = user(uid)
+const post = posts(setPosts)
+
+1. state init
+2. state updates
+3. re-init when uid changes
+4. cleanup
+ex: userEffects(() => subscribeToPosts(uid, setPosts), [uid])
+
+//study jQueryUI
+
+//props to a component are like arguments to a function
+
+//useContext
+
+//cloneElement
+
+// compound component?
+
+// change state in a reducer
+dispatch(action)
+
+// combine reducers
+import {combine-reducers} from 'redux'
+
+// middleware example
+useEffect(() => {
+  console.log(state)
+}, [state])
+
+//improve ReactJS performance issues
+render less!
+
+//animation two types
+// bezier, time based
+// physics, physics based
+
+// fewer use cases for higher order components
+
+// React improve performance
+use hook called "useMemo"
+use profiler in devtools to monitor performance

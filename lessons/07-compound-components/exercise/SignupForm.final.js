@@ -59,8 +59,8 @@ export default function SignupForm() {
         <p>
           <span>Start:</span>{" "}
           <DateFields value={startDate} onChange={setStartDate}>
-            <DayField /> - <MonthField /> -{" "}
-            <YearField start={2018} end={2019} />
+            <DayField aria-label="Start Day" /> - <MonthField aria-label="Start Month" /> -{" "}
+            <YearField aria-label="Start Year" start={2018} end={2019} />
           </DateFields>
         </p>
         <TabsButton>

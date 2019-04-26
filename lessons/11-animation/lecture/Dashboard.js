@@ -19,6 +19,8 @@ import Meta from "app/Meta"
 import { DATE_FORMAT, calculateWeeks, calculateTotalMinutes } from "app/utils"
 import { useAppState } from "app/app-state"
 import NewPost from "app/NewPost"
+// import useTween from "app/useTween"
+// import {playNotes} from "app/playSound"
 
 /******************************************************************************/
 // Three types of element animations:
@@ -31,6 +33,8 @@ import NewPost from "app/NewPost"
 //
 // 1. Time-based on a bezier curve (like CSS transitions)
 // 2. Physics based with a spring
+
+//animation function
 
 function Day({
   user,
